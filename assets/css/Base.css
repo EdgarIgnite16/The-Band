@@ -1,0 +1,101 @@
+/* Reset Css  */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+}
+
+:root {
+    /* Color  */
+    --text-color-black: rgb(109, 109, 109);
+    --text-color: #fff !important;
+    --black-color: #000;
+    --white-color: #fff;
+    --header-background-hover: #ccc;
+    --header-search-btn-hover: #f44336;
+    --modal-overlay: rgba(0, 0, 0, 0.4);
+    --modal-color: #009688 !important;
+    /* Width and Height */
+    --header-height: 46px;
+}
+
+/* giải quyết vấn đề về float  */
+.clear {
+    clear: both;
+}
+
+.is-relative {
+    position: relative;
+}
+
+.is-absolute {
+    position: absolute;
+}
+
+.is-fixed {
+    position: fixed;
+}
+
+.is-sticky {
+    position: sticky;
+}
+
+.overflow_Hidden {
+    overflow: hidden;
+}
+
+/*
+1. Từ ngoài vào trong
+2. Từ trên xuống dưới
+3. Từ tổng quan đến chi tiết
+*/
+
+/*
+1. Vị trí
+2. Kích Thước (width, height)
+3. Màu sắc
+4. Kiểu đáng (kiểu chữ, hình tròn, hình vuông, ..)
+*/
+
+#main {}
+
+.row {
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+.col {
+    padding: 0 8px;
+}
+
+.col-third {
+    width: calc(100% / 3);
+}
+
+.col-half {
+    width: calc(100% / 2);
+}
+
+.col-full {
+    width: 100%;
+}
+
+@keyframes modal_FadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-150%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}

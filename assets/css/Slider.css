@@ -1,0 +1,36 @@
+#slider {
+    /* min-height: 500px; */
+    /* background-color: #333; */
+    margin-top: var(--header-height);
+    padding-top: 50%;
+    background-image: url('../img/chicago.jpg');
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* position: relative; */
+}
+
+#slider .text-content {
+    /* position: absolute; */
+    text-align: center;
+    color: #fff;
+    bottom: 47px;
+    left: 0;
+    right: 0;
+    /* left: 50%; cách 1 căn giữa
+    transform: translateX(-50%); */
+    /* width: 100%; cách 2 căn giữa*/
+}
+
+#slider .text-heading {
+    font-weight: 400;
+    font-size: 24px;
+    text-shadow: 0 0 1px var(--black-color);
+}
+
+#slider .text-description {
+    font-weight: 700;
+    font-size: 15px;
+    margin: 20px 0 0 5px;
+    text-shadow: 0 0 1px var(--black-color);
+}

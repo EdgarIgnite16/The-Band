@@ -1,0 +1,121 @@
+/* constructor modal and overlay */
+
+
+.modal {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    background-color: var(--modal-overlay);
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+.modal.open {
+    display: flex;
+}
+
+.modal-container {
+    position: relative;
+    background-color: var(--white-color);
+    width: 900px;
+    max-width: calc(100% - 32px);
+    min-height: 400px;
+    border-radius: 3px;
+    overflow: hidden;
+    animation: modal_FadeIn ease 0.4s;
+}
+
+.modal-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--modal-color);
+    height: 130px;
+    font-size: 30px;
+    font-weight: 400;
+    color: var(--text-color);
+}
+
+.modal-header-icon {
+    margin-right: 16px;
+}
+
+.modal-close {
+    position: absolute;
+    color: var(--white-color);
+    padding: 16px 20px;
+    font-size: 20px;
+    opacity: 0.8;
+    right: 0;
+    transition: all 0.3s;
+}
+
+.modal-close:hover {
+    opacity: 1;
+    cursor: pointer;
+    background-color: var(--header-background-hover);
+}
+
+.modal-body {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    padding: 0 16px;
+}
+
+.modal-label,
+.modal-input,
+#btn__buy-ticket {
+    display: block;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.modal-label {
+    margin: 15px 0;
+}
+
+.modal-input {
+    border: 1px solid #ccc !important;
+    padding: 8px;
+}
+
+
+#btn__buy-ticket {
+    opacity: 1;
+    padding: 14px;
+    margin: 16px 0;
+    border-radius: 3px;
+    border: none;
+    cursor: pointer;
+    color: var(--text-color);
+    background-color: var(--modal-color);
+    transition: all 0.3s;
+}
+
+#btn__buy-ticket:hover {
+    opacity: 0.85;
+}
+
+.modal-footer {
+    margin: 16px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-help {
+    font-size: 15px;
+    color: var(--black-color);
+}
+
+.modal-help>a {
+    color: var(--modal-color);
+    text-decoration: none;
+    font-weight: 500;
+}
