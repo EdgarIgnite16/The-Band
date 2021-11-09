@@ -25,7 +25,7 @@
     min-height: 400px;
     border-radius: 3px;
     overflow: hidden;
-    animation: modal_FadeIn ease 0.4s;
+    animation: modal_FadeIn ease 0.5s;
 }
 
 .modal-header {
