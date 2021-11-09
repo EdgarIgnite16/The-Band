@@ -285,7 +285,7 @@
     border-radius: 3px;
     color: var(--text-color);
     background-color: var(--black-color);
-    transform: all 0.3s;
+    transition: all 0.3s;
     appearance: none;
     -webkit-appearance: none;
 }
