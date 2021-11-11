@@ -17,7 +17,8 @@ for(var i = 0; i < menuItems.length; i++) {
     var menuItem = menuItems[i];
 
     menuItem.onclick = function(event) {
-        var isParentMenu = this.nextElementSibling && this.nextElementSibling.classList.contains('subnav');
+        var isParentMenu = this.nextElementSibling && 
+        this.nextElementSibling.classList.contains('subnav');
 
         // không đóng mobile menu nếu thẻ cha menu có thêm thẻ con
         isParentMenu ? event.preventDefault() : header.style.height = null ;
